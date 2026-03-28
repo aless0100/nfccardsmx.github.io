@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #f4f4f4;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* PORTADA */
+.header {
+    height: 160px;
+    background: url('../src/logo.jpg') center/cover no-repeat;
+}
+
+/* FOTO */
+.profile-img {
+    width: 120px;
+    border-radius: 50%;
+    margin-top: -60px;
+    border: 4px solid white;
+}
+
+/* TEXTOS */
+h1 {
+    margin: 10px 0 5px;
+}
+
+.subtitle {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* ICONOS */
+.icons a {
+    margin: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+/* COLORES */
+.whatsapp { background: #25D366; }
+.facebook { background: #1877F2; }
+.phone { background: #333; }
+.location { background: #ff5722; }
+
+/* BOTONES */
+.btn {
+    display: block;
+    width: 80%;
+    margin: 15px auto;
+    padding: 14px;
+    background: black;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-autos {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 12px;
+    background: #111;
+    color: white;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* INFO */
+.info {
+    padding: 20px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* TITULO */
+h2 {
+    margin-top: 10px;
+}
