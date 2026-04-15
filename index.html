@@ -3,63 +3,112 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tarjeta Digital</title>
-
+<title>Karla Diaz – Asesora JAC Campeche</title>
 <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
 
 <div class="container">
 
-    <!-- PORTADA -->
-    <div class="header"></div>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <img src="src/logo.jpg" alt="JAC" class="hero-logo"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='block'">
+      <span class="hero-logo-fallback" style="display:none;">JAC</span>
+    </div>
+  </div>
 
-    <!-- FOTO -->
-    <img src="src/Karla.jpg" class="profile-img">
+  <!-- FOTO -->
+  <div class="avatar-wrap">
+    <div class="avatar-ring">
+      <img src="src/Karla.jpg" alt="Karla Diaz" class="profile-img"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+      <div class="avatar-fallback">KD</div>
+    </div>
+  </div>
 
-    <!-- NOMBRE -->
+  <!-- DATOS -->
+  <div class="info-block">
     <h1>Karla Beatriz Diaz Jimenez</h1>
-    <p class="subtitle">Asesor de ventas JAC Campeche</p>
+    <p class="role">Asesora de Ventas</p>
+    <p class="brand-tag">JAC Campeche</p>
+  </div>
 
-    <!-- ICONOS -->
-    <div class="icons">
-        <!-- WhatsApp -->
-        <a href="https://wa.me/5219811570813" target="_blank" class="whatsapp">W</a>
+  <div class="divider"><span></span></div>
 
-        <!-- Facebook -->
-        <a href="https://www.facebook.com/share/17Bwk27FeB/" target="_blank" class="facebook">F</a>
+  <!-- ICONOS SOCIALES -->
+  <div class="social-grid">
+    <a href="https://wa.me/5219811570813" target="_blank" class="social-btn whatsapp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.531 5.847L.057 23.578a.563.563 0 00.666.726l5.898-1.545A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.805 9.805 0 01-5.032-1.386l-.361-.215-3.739.98.998-3.638-.235-.374A9.817 9.817 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+      <span>WhatsApp</span>
+    </a>
 
-        <!-- CONTACTO (VCF) -->
-        <a href="contacto.vcf" class="phone">📞</a>
+    <a href="https://www.facebook.com/share/17Bwk27FeB/" target="_blank" class="social-btn facebook">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+      <span>Facebook</span>
+    </a>
 
-        <!-- UBICACIÓN -->
-        <a href="https://maps.app.goo.gl/nFrLwPjwnAX1MWM28" target="_blank" class="location">📍</a>
+    <a href="https://maps.app.goo.gl/nFrLwPjwnAX1MWM28" target="_blank" class="social-btn location">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+      <span>Agencia</span>
+    </a>
+
+    <a href="contacto.vcf" class="social-btn contact">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75A2.25 2.25 0 1112 11a2.25 2.25 0 010-4.25zM17 17H7v-.75c0-1.33 2.67-2 5-2s5 .67 5 2V17z"/></svg>
+      <span>Contacto</span>
+    </a>
+  </div>
+
+  <!-- BOTONES CTA -->
+  <div class="cta-section">
+    <a href="contacto.vcf" class="btn-primary">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-8 2.75A2.25 2.25 0 1112 11a2.25 2.25 0 010-4.25zM17 17H7v-.75c0-1.33 2.67-2 5-2s5 .67 5 2V17z"/></svg>
+      Guardar contacto
+    </a>
+    <a href="autos.html" class="btn-secondary">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/></svg>
+      Ver vehículos JAC
+    </a>
+  </div>
+
+  <!-- DESCRIPCIÓN -->
+  <div class="desc-section">
+    <p class="desc-text">
+      En JAC nos especializamos en ofrecer vehículos modernos, seguros y accesibles,
+      diseñados para adaptarse a tu estilo de vida. Nuestra tecnología, eficiencia y diseño
+      hacen de cada modelo una excelente opción para quienes buscan calidad sin comprometer
+      su presupuesto.
+    </p>
+
+    <div class="highlight-bar">
+      <div class="highlight-item">
+        <span class="highlight-icon">🏆</span>
+        <span>Calidad Superior</span>
+      </div>
+      <div class="highlight-item">
+        <span class="highlight-icon">⚡</span>
+        <span>Tecnología PHEV</span>
+      </div>
+      <div class="highlight-item">
+        <span class="highlight-icon">💰</span>
+        <span>Mejor Precio</span>
+      </div>
     </div>
 
-    <!-- BOTÓN CONTACTO -->
-    <a href="contacto.vcf" class="btn">Guardar contacto</a>
-
-    <!-- BOTÓN VEHÍCULOS -->
-    <a href="autos.html" class="btn-autos">Ver vehículos</a>
-
-    <!-- DESCRIPCIÓN -->
-    <p class="info">
-        En JAC nos especializamos en ofrecer vehículos modernos, seguros y accesibles,
-        diseñados para adaptarse a tu estilo de vida. Nuestra tecnología, eficiencia y diseño
-        hacen de cada modelo una excelente opción para quienes buscan calidad sin comprometer
-        su presupuesto.
-    </p>
-
     <h2>¿Por qué elegir un JAC?</h2>
-
-    <p class="info">
-        Un JAC no es solo un auto, es una inversión inteligente. Disfruta de un excelente
-        rendimiento, innovación tecnológica y el respaldo de una marca en constante crecimiento.
-        Ya sea para tu día a día o tu negocio, hay un JAC perfecto para ti.
+    <p class="desc-text">
+      Un JAC no es solo un auto, es una inversión inteligente. Disfruta de un excelente
+      rendimiento, innovación tecnológica y el respaldo de una marca en constante crecimiento.
+      Ya sea para tu día a día o tu negocio, hay un JAC perfecto para ti.
     </p>
+  </div>
+
+  <div class="footer">
+    <p>© 2025 · JAC Campeche · Karla Beatriz Diaz Jimenez</p>
+  </div>
 
 </div>
-
 </body>
 </html>
